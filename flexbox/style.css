@@ -1,0 +1,23 @@
+html{
+    box-sizing: border-box;
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+#parent{
+    /* flex container */
+    border: 10px solid red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#parent div{
+    /* flex items */
+    border: 2px solid blue;
+padding: 20px;
+background-color: bisque;
+ min-width: 100px;      /* at least for each item this width shoule be there */
+ flex-grow: 1;         /* if the width of the parent container is more then we can use it */
+}
